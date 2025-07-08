@@ -1,5 +1,4 @@
-*.md linguist-language=React 
-*.yml linguist-language=React
-*.html linguist-language=React 
-*.js linguist-language=TypeScript 
-*.css linguist-language=React 
+*.js linguist-detectable=false
+*.jsx linguist-detectable=false
+*.ts linguist-detectable=true
+*.tsx linguist-detectable=true
