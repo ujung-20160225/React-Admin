@@ -5,3 +5,5 @@ src/* linguist-detectable=true
 *.tsx linguist-language=TypeScript 
 *.css linguist-language=TypeScript 
 *.less linguist-language=TypeScript 
+*.md linguist-language=TypeScript 
+*.html linguist-language=TypeScript 
