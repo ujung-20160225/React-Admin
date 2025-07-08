@@ -1,0 +1,5 @@
+*.md linguist-language=React 
+*.yml linguist-language=React
+*.html linguist-language=React 
+*.js linguist-language=TypeScript 
+*.css linguist-language=React 
