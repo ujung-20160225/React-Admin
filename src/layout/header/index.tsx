@@ -10,7 +10,7 @@ export default function NavHeader() {
   const items: MenuProps["items"] = [
     {
       key: "email",
-      label: "邮箱：examples@gmail.com",
+      label: "邮箱：jiamy1@gmail.com",
     },
     {
       key: "logout",

@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <footer className={stytles.footer}>
       <div>
         <a
-          href="https://github.com/daweilv/react-admin-template"
+          href="https://github.com/ujung-20160225/React-Admin"
           target="_blank"
           rel="noreferrer"
         >
