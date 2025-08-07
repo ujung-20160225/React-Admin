@@ -5,7 +5,27 @@ import type { MenuProps } from "antd";
 import styles from "./index.module.less";
 import { useStore } from "../../store";
 import Breadcrumb from "./Breadcrumb";
+import i18n from "../../locales/i18n";
+import { useEffect, useState } from "react";
+
 export default function NavHeader() {
+  const [currentLanguage, setCurrentLanguage] = useState<string>("zh-CN");
+  useEffect(() => {
+    const localLanguage = localStorage.getItem("i18nextLng") as string;
+    setCurrentLanguage(localLanguage);
+  }, []);
+  const handleChangeLanguage = () => {
+    const nowLanguage = localStorage.getItem("i18nextLng") as string;
+    let val = "";
+    if (nowLanguage == "zh") {
+      val = "en";
+      setCurrentLanguage(val);
+    } else {
+      val = "zh";
+      setCurrentLanguage(val);
+    }
+    i18n.changeLanguage(val);
+  };
   const { collapsed, updateCollapsed, isDark, updateTheme } = useStore();
   const items: MenuProps["items"] = [
     {
@@ -54,6 +74,11 @@ export default function NavHeader() {
         <Breadcrumb />
       </div>
       <div className={styles.right}>
+        {currentLanguage == "en" ? (
+          <img src="/imgs/lang-en.svg" alt="" onClick={handleChangeLanguage} />
+        ) : (
+          <img src="/imgs/lang-zh.svg" alt="" onClick={handleChangeLanguage} />
+        )}
         <Switch
           checkedChildren="暗黑"
           unCheckedChildren="默认"

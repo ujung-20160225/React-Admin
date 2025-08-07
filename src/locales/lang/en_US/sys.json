@@ -1,0 +1,67 @@
+{
+  "sys": {
+    "dashboard": {
+      "userInfo": "User Info"
+    },
+    "menu": {
+      "dashboard": "Dashboard",
+      "workbench": "Workbench",
+      "analysis": "Analysis",
+      "management": "Management",
+      "user": {
+        "index": "User",
+        "profile": "Profile",
+        "account": "Account"
+      },
+      "system": {
+        "index": "System",
+        "organization": "Organization",
+        "permission": "Permission",
+        "role": "Role",
+        "user": "User",
+        "user_detail": "User Detail"
+      },
+      "blog": "Blog",
+      "components": "Components",
+      "icon": "Icon",
+      "animate": "Animate",
+      "scroll": "Scroll",
+      "markdown": "Markdown",
+      "editor": "Editor",
+      "i18n": "Multi Language",
+      "upload": "Upload",
+      "chart": "Chart",
+      "toast": "Toast",
+      "functions": "Functions",
+      "clipboard": "Clipboard",
+      "token_expired": "Token Expired",
+      "menulevel": {
+        "index": "Menu Level",
+        "1a": "Menu Level 1a",
+        "1b": {
+          "index": "Menu Level 1b",
+          "2a": "Menu Level 2a",
+          "2b": {
+            "index": "Menu Level 2b",
+            "3a": "Menu Level 3a",
+            "3b": "Menu Level 3b"
+          }
+        }
+      },
+      "disabled": "Item Disabled",
+      "label": "Item Label",
+      "frame": "Item External",
+      "external_link": "External Link",
+      "iframe": "Iframe",
+      "blank": "Blank",
+      "calendar": "Calendar",
+      "kanban": "Kanban",
+      "error": {
+        "index": "Error Page",
+        "403": "403",
+        "404": "404",
+        "500": "500"
+      }
+    }
+  }
+}

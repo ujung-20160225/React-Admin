@@ -6,7 +6,10 @@ import { IReportData } from "../../types/api";
 import { useStore } from "../../store";
 import { formateState } from "../../utils";
 import { useCharts } from "../../hooks/useCharts";
+import { useTranslation } from "react-i18next";
+
 export default function Dashboard() {
+  const { t } = useTranslation();
   const userInfo = useStore((state) => state.userInfo);
 
   const [lineRef, lineChart] = useCharts();
@@ -153,7 +156,7 @@ export default function Dashboard() {
     <div className={styles.dashboard}>
       <div className={styles.userInfo}>
         <img src={userInfo.userImg} className={styles.userImg} />
-        <Descriptions title="用户信息">
+        <Descriptions title={t("sys.dashboard.userInfo")}>
           <Descriptions.Item label="用户ID">
             {userInfo.userId}
           </Descriptions.Item>

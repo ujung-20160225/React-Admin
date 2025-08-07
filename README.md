@@ -6,6 +6,8 @@ Ant Design 组件库
 
 eslint 代码校验
 
-vuei18n 国际化
+i18next 国际化
 
 zustand 状态管理
+
+暗黑模式切换
